@@ -6,34 +6,40 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(../depositphotos_387700050-stock-photo-dark-black-geometric-grid-carbon.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .geral {
     border: 5px solid rgb(88, 54, 90);
     height: 670px;
     background-image: url(../um-fundo-floral-cinza-e-branco-com-uma-flor-branca-nele_901003-5774.avif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
 #topo {
     height: 415px;
 }
+
 h1 {
     display: flex;
     justify-content: center;
     font-size: 60px;
 }
+
 p {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 120px;
 }
+
 button {
     margin: 3px;
     padding: 15px;
@@ -44,19 +50,26 @@ button {
     border-radius: 20px;
     transition: background-color 0.4s ease;
 }
+
 button:active {
-    box-shadow: 3.4px 4px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra, simulando um clique */
-  transform: translateY(3.2px); /* Faz o botão "descer" um pouco */
+    box-shadow: 3.4px 4px 4px rgba(0, 0, 0, 0.2);
+    /* Reduz a sombra, simulando um clique */
+    transform: translateY(3.2px);
+    /* Faz o botão "descer" um pouco */
 }
+
 .negativos:hover {
     background-color: rgb(179, 31, 31);
 }
+
 .positivos:hover {
     background-color: rgb(7, 110, 7);
 }
+
 .z-btn:hover {
     background-color: rgb(148, 148, 28);
 }
+
 .btns {
     display: flex;
     align-items: center;
@@ -66,18 +79,21 @@ button:active {
     border-radius: 60px;
     padding: 5px;
     width: 650px;
-    margin-left: 37px;  
 }
+
 .btn-p {
     display: flex;
 }
+
 .btn-n {
     display: flex;
 }
+
 .z-btn {
     font-style: italic;
     display: flex;
 }
+
 div {
     width: 100vh;
 }
