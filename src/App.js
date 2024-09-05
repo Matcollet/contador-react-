@@ -6,26 +6,28 @@ const Contador = () => {
   const [numero, setNumero] = useState(0)
 
   return (
-    <section>
+    <section className='geral'>
+      <div id='topo'>
     <h1>COUNTER</h1>
     <p>{numero}</p>
-    <div className='btns'>
-    <div className='p-btns'>
-    <button onClick={aumentar1}>+1</button>
-    <button onClick={aumentar10}>+10</button>
-    <button onClick={aumentar100}>+100</button>
-    <button onClick={aumentar1000}>+1000</button>
-    <button onClick={aumentar10000}>+10000</button>
     </div>
+    <section className='btns'>
+    <section className='btn-p'>
+    <button className='positivos' onClick={aumentar1}>+1</button>
+    <button className='positivos' onClick={aumentar10}>+10</button>
+    <button className='positivos' onClick={aumentar100}>+100</button>
+    <button className='positivos' onClick={aumentar1000}>+1000</button>
+    <button className='positivos' onClick={aumentar10000}>+10000</button>
+    </section>
     <button className='z-btn' onClick={zerar}>ZERAR</button>
-    <div className='n-btns'>
-    <button onClick={diminuir1}>-1</button>
-    <button onClick={diminuir10}>-10</button>
-    <button onClick={diminuir100}>-100</button>
-    <button onClick={diminuir1000}>-1000</button>
-    <button onClick={diminuir10000}>-10000</button>
-    </div>
-    </div>
+    <section className='btn-n'>
+    <button className='negativos' onClick={diminuir1}>-1</button>
+    <button className='negativos' onClick={diminuir10}>-10</button>
+    <button className='negativos' onClick={diminuir100}>-100</button>
+    <button className='negativos' onClick={diminuir1000}>-1000</button>
+    <button className='negativos' onClick={diminuir10000}>-10000</button>
+    </section>
+    </section>
     </section>
   );
   
@@ -45,7 +47,7 @@ const Contador = () => {
     setNumero(numero + 100)
   }
   function diminuir100() {
-    setNumero(numero - 1000)
+    setNumero(numero - 100)
   }
   function aumentar1000() {
     setNumero(numero + 1000)
