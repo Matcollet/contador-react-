@@ -12,7 +12,6 @@ const Home = () => {
     <div>
 
       <Contador />
-      <Contador />
 
     </div> 
   );
